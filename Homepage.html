@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>navbar</title>
+    <title>Your World of fashion</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 #navbar{
@@ -305,9 +308,437 @@ text-align: center;
         
     }#myBtn:hover{
         cursor: pointer;
-    }#landing_pageimage{
-        
     }
+    #navbar{
+width: 100%;
+height: 100px;
+
+}#div1{
+
+    height: 35%;
+    display: flex;
+    justify-content: end;
+align-items: center;
+}#div2{
+    width: 100%;
+
+height: 65%;
+display: flex;
+align-items: center;
+}#image{
+    height: 40px;
+    margin-left: 15px;
+    margin-top:-2px;
+}#div2>span{
+margin-left: 30px;
+font-size: 18px;
+margin-right: 15px;
+color: #5d5d5d;
+
+}a{
+    text-decoration: none;
+}
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+i{
+    color: black;
+}
+form{
+width: 100%;
+margin-left: 10px;
+}
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  border-left: none;
+  width: 96%;
+  background: white;
+  height: 50px;
+  border-left-style: none;
+}#but1,#but2{
+    margin-right: 20px;
+    color: black;
+    border: none;
+    font-weight: bold;
+    background-color: white;
+    font-size: 12px;
+}#but1:hover{
+    cursor: pointer;
+}
+#but2:hover{
+    cursor: pointer;
+}
+form.example button {
+  float: left;
+  width: 3%;
+  padding: 10px;
+  background:white;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: 1px solid grey;
+  border-right: none;
+  cursor: pointer;
+  height: 50px;
+}
+
+form.example button:hover {
+  background:white;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}.a1{
+    margin-right: 15px;
+    margin-left: -20px;
+    background-color: black;
+    color: white;
+    width: 40px;
+    text-align: center;
+    font-size: 14px
+}.a2{
+    margin-right: 30px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 13px;
+
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color:white;
+  color:black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom:-950%;
+  left: 50%;
+  margin-left: -80px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}.popup{
+    margin-right: 15px;
+
+}#categorywomen{
+    width: 102%;
+    margin-left: -10px;
+    height: 40px;
+    border: 1px solid black;
+    margin-left: -10px;
+    display: flex;
+    align-items: center;
+}.a3{
+    margin-left: 30px;
+    color: black;
+}#id1{
+    width: 100%;
+    padding-top: 25px;
+display: flex;
+}#id2{
+    width: 20%;
+    height: 480px;
+    border-right:1px solid black ;
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+    padding-left: 30px;
+    padding-right: 40px;
+    color: black;
+}#id3{
+width: 80%;
+border: none;
+height: 400px;
+}
+
+
+
+
+/* The Modal (background) */
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 10px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content2 {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close2 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#myBtn1{
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  margin-left:10px ;
+  text-decoration: underline;
+}
+
+/* The Modal (background) */
+.modal3 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content3 {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close3 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navbar{
+width: 100%;
+height: 100px;
+
+}#div1{
+
+    height: 35%;
+    display: flex;
+    justify-content: end;
+align-items: center;
+}#div2{
+    width: 100%;
+
+height: 65%;
+display: flex;
+align-items: center;
+}#image{
+    height: 40px;
+    margin-left: 15px;
+    margin-top:-2px;
+}#div2>span{
+margin-left: 30px;
+font-size: 18px;
+margin-right: 15px;
+color: #5d5d5d;
+
+}a{
+    text-decoration: none;
+}
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+i{
+    color: black;
+}
+form{
+width: 100%;
+margin-left: 10px;
+}
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  border-left: none;
+  width: 96%;
+  background: white;
+  height: 50px;
+  border-left-style: none;
+}#but1,#but2{
+    margin-right: 20px;
+    color: black;
+    border: none;
+    font-weight: bold;
+    background-color: white;
+    font-size: 12px;
+}#but1:hover{
+    cursor: pointer;
+}
+#but2:hover{
+    cursor: pointer;
+}
+form.example button {
+  float: left;
+  width: 3%;
+  padding: 10px;
+  background:white;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: 1px solid grey;
+  border-right: none;
+  cursor: pointer;
+  height: 50px;
+}
+
+form.example button:hover {
+  background:white;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}.a1{
+    margin-right: 15px;
+    margin-left: -20px;
+    background-color: black;
+    color: white;
+    width: 40px;
+    text-align: center;
+    font-size: 14px
+}.a2{
+    margin-right: 30px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+
+
+#categorymen{
+    width: 102.5%;
+    height: 40px;
+    border: 1px solid black;
+    margin-left: -10px;
+    display: flex;
+    align-items: center;
+}.a3{
+    margin-left: 30px;
+    color: black;
+}#id3{
+    width: 100%;
+    padding-top: 25px;
+display: flex;
+}#id4{
+    width: 20%;
+    height: 480px;
+    border-right:1px solid black ;
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+    padding-left: 30px;
+    padding-right: 40px;
+    color: black;
+}#id5{
+width: 80%;
+border: none;
+height: 400px;
+}
+#myBtn2{
+background-color: white;
+border: none;
+font-size: 20px;
+margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
 </style>
 
     </style>
@@ -332,8 +763,8 @@ text-align: center;
 <div id="div2">
   <a href=""><img id="image" src="https://maddyness-uk.twic.pics/2021/05/Screenshot-2021-05-12-at-13.55.18.png?twic=v1/resize=630" alt="">
   </a>
-<span><a href="">WOMEN</a></span>
-<span><a href="">MEN</a></span>
+  <button id="myBtn2">MEN</button>
+  <button id="myBtn1">Women</button>
 <form class="example" action="/action_page.php">
     <button type="submit"><i class="fa fa-search"></i></button>
     <input type="text" placeholder="Search (E.G. VALENTINO DRESSES)" name="search">
@@ -414,15 +845,193 @@ text-align: center;
 <option value="North Korea"></option>
 <option value="Ukraine"></option>
 </select>
-
 <button type="submit" id="country"><span class="set">Set Country</span></button>
 
 
 </form>
 </div>
   </div>
+</div>
+<!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+<div id="myModal2" class="modal2">
+
+  <!-- Modal content -->
+  <div class="modal-content2">
+    <span class="close2">&times;</span>
+    <div id="navbar">
+<div id="div1">
+<button id="but1">IN-US$</button>
+<div class="container">
+                                           
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Help
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Help Center</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Contact Us</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Career</a></li>
+    </ul>
+  </div>
+</div>
+<a href="" class="a2">Sign in</a>
+<a href="" class="a1">Join</a></div>
+<div id="div2">
+<img id="image" src="https://maddyness-uk.twic.pics/2021/05/Screenshot-2021-05-12-at-13.55.18.png?twic=v1/resize=630" alt="">
+<span><a href="">WOMEN</a></span>
+<span style="margin-left: 0px;"><a href="">MEN</a></span>
+<form class="example" action="/action_page.php">
+    <button type="submit"><i class="fa fa-search"></i></button>
+    <input type="text" placeholder="Search (e.g. Valentino dresses)" name="search">
+  </form>
+</div>
+</div>
+<div id="categorywomen">
+<a class="a3" href=""> <u>Clothing</u> 
+</a>
+<a class="a3" href="">Shoes
+</a>
+<a class="a3" href="">Accessories
+</a>
+<a class="a3" href="">Bags
+</a>
+<a class="a3" href="">Jewelry
+</a>
+<a class="a3" href="">Brands
+</a>
+<a class="a3" href="">All Women's
+</a>
+<a class="a3" href=""> Sale
+
+</a>
 
 </div>
+
+<div id="id1">
+<div id="id2" >
+    <a href="">All Clothing</a>
+    <a href="" style="line-height: 22px;">BeachWear and swimwear outfits</a>
+    <a href="">Coats</a>
+    <a href="">Dresses</a>
+    <a href="">Hosiery</a>
+    <a href="">Jackets</a>
+    <a href="">Jeans</a>
+    <a href="">Jumpsuits and rompers</a>
+    <a href="">Sweaters and knitwear</a>
+    <a href="">Lingerie</a>
+    <a href="">Nightwear and sleepwear</a>
+    <a href="">+More</a>
+
+</div>
+<div id="id3"></div>
+</div>
+  </div>
+
+</div>
+
+<!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+<div id="myModal3" class="modal3">
+
+  <!-- Modal content -->
+  <div class="modal-content3">
+    <span class="close3">&times;</span>
+ <div id="navbar">
+<div id="div1">
+<button id="but1">IN-US$</button>
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Help
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Help Center</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Contact Us</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+    <li role="presentation" class="divider"></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Career</a></li>
+  </ul>
+</div>
+</div>
+
+<a href="" class="a2">Sign in</a>
+<a href="" class="a1">Join</a></div>
+<div id="div2">
+<img id="image" src="https://maddyness-uk.twic.pics/2021/05/Screenshot-2021-05-12-at-13.55.18.png?twic=v1/resize=630" alt="">
+<span><a href="">WOMEN</a></span>
+<span style="margin-left: 0px;"><a href="">MEN</a></span>
+<form class="example" action="/action_page.php">
+    <button type="submit"><i class="fa fa-search"></i></button>
+    <input type="text" placeholder="Search (e.g. Acne jeans)" name="search">
+  </form>
+</div>
+</div>
+<div id="categorymen">
+<a class="a3" href=""> <u>Clothing</u> 
+</a>
+<a class="a3" href="">Shoes
+</a>
+<a class="a3" href="">Accessories
+</a>
+<a class="a3" href="">Bags
+</a>
+<a class="a3" href="">Jewelry
+</a>
+<a class="a3" href="">Brands
+</a>
+<a class="a3" href="">All Men's
+</a>
+<a class="a3" href=""> Sale
+
+</a>
+
+</div>
+
+<div id="id3">
+<div id="id4" >
+    <a href="">All Clothing</a>
+    <a href="" style="line-height: 22px;">BeachWear</a>
+    <a href="">Coats</a>
+    <a href="">Dresses</a>
+    <a href="">Hosiery</a>
+    <a href="">Jackets</a>
+    <a href="">Jeans</a>
+    <a href="">Jumpsuits and rompers</a>
+    <a href="">Sweaters and knitwear</a>
+    <a href="">Lingerie</a>
+    <a href="">Nightwear and sleepwear</a>
+    <a href="">+More</a>
+
+</div>
+<div id="id5"></div>
+</div>
+   
+    
+    
+    
+    
+    
+    
+    
+    
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -503,5 +1112,60 @@ window.onclick = function(event) {
     modal1.style.display = "none";
   }
 }
+// Get the modal
+var modal2 = document.getElementById("myModal2");
+
+// Get the button that opens the modal
+var btn2 = document.getElementById("myBtn1");
+
+// Get the <span> element that closes the modal
+var span2 = document.getElementsByClassName("close2")[0];
+
+// When the user clicks the button, open the modal 
+btn2.onclick = function() {
+  modal2.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span2.onclick = function() {
+  modal2.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+}
+
+
+
+var modal3 = document.getElementById("myModal3");
+
+// Get the button that opens the modal
+var btn3 = document.getElementById("myBtn2");
+
+// Get the <span> element that closes the modal
+var span3 = document.getElementsByClassName("close3")[0];
+
+// When the user clicks the button, open the modal 
+btn3.onclick = function() {
+  modal3.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span3.onclick = function() {
+  modal3.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal3) {
+    modal3.style.display = "none";
+  }
+}
+
+
+
 
 </script>
