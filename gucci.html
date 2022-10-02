@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUCCI PRODUCT PAGE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+#navbar{
+width: 100%;
+height: 100px;
+
+}#div1{
+
+    height: 35%;
+    display: flex;
+    justify-content: end;
+align-items: center;
+}#div2{
+    width: 100%;
+
+height: 65%;
+display: flex;
+align-items: center;
+}#image{
+    height: 40px;
+    margin-left: 15px;
+    margin-top:-2px;
+}#div2>span{
+margin-left: 30px;
+font-size: 18px;
+margin-right: 15px;
+color: #5d5d5d;
+
+}a{
+    text-decoration: none;
+}
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+i{
+    color: black;
+}
+form{
+width: 100%;
+margin-left: 10px;
+}
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  border-left: none;
+  width: 95%;
+  background: white;
+  height: 50px;
+  border-left-style: none;
+}#but1,#but2{
+    margin-right: 20px;
+    color: black;
+    border: none;
+    font-weight: bold;
+    background-color: white;
+}#but1:hover{
+    cursor: pointer;
+}
+#but2:hover{
+    cursor: pointer;
+}
+form.example button {
+  float: left;
+  width: 3%;
+  padding: 10px;
+  background:white;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: 1px solid grey;
+  border-right: none;
+  cursor: pointer;
+  height: 50px;
+}
+
+form.example button:hover {
+  background:white;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}.a1{
+    margin-right: 20px;
+    margin-left: -20px;
+}.a2{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color:white;
+  color:black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom:-950%;
+  left: 50%;
+  margin-left: -80px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}.popup{
+    margin-left: 10px;
+}#GUCCI{
+    width: 103%;
+    height: 130px;
+    background-color:#f5f4f2;
+margin-top: 5px;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+display: flex;
+margin-left: -10px;
+}#GUCCI>img{
+    margin-left: 135px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 30px;
+}#Guc{
+    margin-left: 15px;
+    margin-top: 35px;
+    font-size: 35px;
+
+}#follow:hover{
+    cursor: pointer;
+}
+#follow{
+    margin-left: 950px;
+    margin-top: 45px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}#product1{
+    width: 80%;
+    display: grid;
+    grid-template-columns:18% 85% ;
+    grid-template-rows: auto;
+    gap: 10px;
+    margin: auto;
+}#filter{
+position: sticky;
+margin-left: -20px;
+overflow:visible
+}#stores{
+    position: sticky;
+    margin-left: 10px;
+    width: 183px;
+    height: 30px;
+    border: none;
+    border-top: 1px solid black;
+    font-size: 22px;
+    border-bottom: 1px solid black;
+}#color{
+    position: sticky;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 183px;
+    font-size: 22px;
+    height: 30px;
+    border: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}#products>div:nth-child(1){
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    margin-top: 5px;
+}#Price1{
+    width: 250px;
+    height: 45px;
+    font-weight: bold;
+    font-size: 20px;
+}#products>div:nth-child(2){
+    width: 93%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #f5f4f2;
+    margin-top: 10px;
+}#products>div:nth-child(2)>button{
+    background-color: white;
+    color: black;
+    margin-left:20px ;
+width: 90px;
+height: 25px;
+border: none;
+}#allproducts{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: auto;
+width: 95%;
+height: 600px;
+margin-top: 20px;
+}.productinfo{
+border: 1px solid black;
+}
+#footer{
+    margin-top: 4000px;
+    display: flex;
+    width:102%;
+    height: 600px;
+    margin-left: -20px;
+    border-top: 1px solid black;
+    background-color:#f5f4f2;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}#footer-child1{
+    width: 800px;
+    height: 100%;
+    
+}
+#footer-child2{
+    width: 360px;
+    height: 100%;
+   
+}#footer-child3{
+    width: 340px;
+    height: 100%;
+  
+}ul>li>a{
+    color: black;
+}
+</style>
+
+    </style>
+</head>
+<body>
+<div id="navbar">
+<div id="div1">
+<button id="but1">IN-US$</button>
+<div class="popup" onclick="myFunction()">help
+    <span class="popuptext" id="myPopup"><div><a href="" class="anchor1"></a>Help Center</div>
+    <div>-------------------</div>
+    <div><a href="" class="anchor1">Contact Us</a></div>
+    <div>-------------------</div>
+    <div><a href="" class="anchor1"></a>About Us</div>
+    <div>-------------------</div>
+    <div><a href="" class="anchor1"></a>Career</div>
+    <div>-------------------</div>
+    </span>
+  </div>
+<a href="" class="a2">Sign in</a>
+<a href="" class="a1">Join</a></div>
+<div id="div2">
+<img id="image" src="https://maddyness-uk.twic.pics/2021/05/Screenshot-2021-05-12-at-13.55.18.png?twic=v1/resize=630" alt="">
+<span><a href=""> <u>WOMEN</u> </a></span>
+<span><a href="">MEN</a></span>
+<form class="example" action="/action_page.php">
+    <button type="submit"><i class="fa fa-search"></i></button>
+    <input type="text" placeholder="Search (E.G. VALENTINO DRESSES)" name="search">
+  </form>
+</div>
+</div>
+    <div id="GUCCI">
+<IMG  src="https://cdna.lystit.com/48/48/c/lyst_photos/2020/11/19/2383-294541154.jpeg"></IMG><span id="Guc">GUCCI</span>
+<a href=""><button id="follow">FOLLOW</button></a>
+    </div>
+
+<div id="product1">
+
+    <div id="filter">
+        <h2>Filters</h2>
+<select name="" id="stores">
+<option value="" id="SortbyStores">Sort by Stores</option>
+<option value="">Rue-La-La</option>
+<option value="">Gilt</option>
+<option value="">SSense</option>
+<option value="">Mytheresa</option>
+<option value="">Harrods</option>
+</select>
+<p></p>
+<select name="" id="color">
+    <option value="" id="Sortbycolors">Sort by Colors</option>
+    <option value="blue">blue</option>
+    <option value="red">red</option>
+    <option value="green">green</option>
+    <option value="yellow">yellow</option>
+    <option value="black">black</option>
+    <option value="brown">brown</option>
+    <option value="yellow-green">yellow-green</option>
+    <option value="green-yellow">green</option>
+    </select>
+</div>
+<div id="products">
+<div ><h2>40 Products,4 stores</h2>
+<select name="" id="Price1">
+<option value="">Sort by Price</option>
+<option value="Lowest to Highest">Lowest to Highest</option>
+<option value="Highest to Lowest">Highest to Lowest</option>
+</select>
+</div>
+<div>  <button>+ Women's</button>
+    <button>+ Men's </button></div>
+    <div id="allproducts"></div>    
+</div>
+</div>
+
+
+<div id="footer" >
+    <div id="footer-child1">
+    <img style="width:200px; margin-top: 80px; margin-left: 300px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Trustpilot_Logo_%282022%29.svg/330px-Trustpilot_Logo_%282022%29.svg.png" alt="">
+    <img style="width: 200px; display: block; margin-left: 300px" src="https://cdn.trustpilot.net/brand-assets/4.1.0/stars/stars-4.5.svg" alt="">
+    <p style="font-weight: bolder; margin-left: 340px;" m>TrustScore 4.5 </p>
+    <h3 style="display:inline; margin-left: 340px;">2,874</h3><span>reviews</span><br>
+    <img style="width: 30px;height:30px;margin-left:250px; margin-bottom:-20px ;" src="https://seekicon.com/free-icon-download/facebook_7.svg" alt="">
+    <img style="width: 30px;height:30px; margin-left: 0px;margin-bottom:-20px  " src="https://i.pinimg.com/originals/75/d3/8a/75d38aa1c72110c7df99586c18037d7c.jpg" alt="">
+    <br>
+    <img style="width:200px; margin-bottom:-30px; margin-left: 230px;" src="https://www.logo.wine/a/logo/Google_Play/Google_Play-Badge-Logo.wine.svg" alt="">
+    <img style="width:180px; margin-left: -20px;" src="https://images.squarespace-cdn.com/content/v1/5cb86c018dfc8ca29e4e4b2b/1585767173618-DQWYTZI9LXP26S4FDUWO/app-store-badge.png" alt="">
+    <p style="margin-left:250px;">Learn about  the lyst app for iPhone,iPad and Android </p>
+    <p style="margin-left:250px;">© 2022 Lyst </p>
+    </div>
+    <div id="footer-child2" >
+        <h2 style="margin-top: 90px;margin-left: 37px;">INTERNATIONAL</h2>
+        <ul type="none" style="line-height: 25px;"><li><a href="https://www.lyst.com/en-au/" class="_8E8E _36PPP _2AZKg">Lyst - AU</a></li><li><a href="https://www.lyst.com/en-ca/" class="_8E8E _36PPP _2AZKg">Lyst - CA</a></li><li><a href="https://www.lyst.co.uk/" class="_8E8E _36PPP _2AZKg">Lyst - UK</a></li><li><a href="https://www.lyst.com/de-at/" class="_8E8E _36PPP _2AZKg">Lyst - Österreich</a></li><li><a href="https://www.lyst.com/de-ch/" class="_8E8E _36PPP _2AZKg">Lyst - Schweiz</a></li><li><a href="https://www.lyst.com/de-de/" class="_8E8E _36PPP _2AZKg">Lyst - Deutschland</a></li><li><a href="https://www.lyst.com/es-es/" class="_8E8E _36PPP _2AZKg">Lyst - España</a></li><li><a href="https://www.lyst.com/fr-fr/" class="_8E8E _36PPP _2AZKg">Lyst - France</a></li><li><a href="https://www.lyst.com/it-it/" class="_8E8E _36PPP _2AZKg">Lyst - Italia</a></li><li><a href="https://www.lyst.com/ja-jp/" class="_8E8E _36PPP _2AZKg">Lyst - 日本</a></li><li><a href="https://www.lyst.com/nl-be/" class="_8E8E _36PPP _2AZKg">Lyst - België</a></li><li><a href="https://www.lyst.com/nl-nl/" class="_8E8E _36PPP _2AZKg">Lyst - Nederland</a></li></ul>
+               
+    </div>
+    <div id="footer-child3">
+        <H2 style="margin-top: 90px;margin-left:37px ;">HELP AND INFO</H2>
+        <ul style="color: black; line-height: 25px;" type="none"><li><a class="_3lo6l _36PPP _2AZKg" href="https://help.lyst.com/hc/change_language/en-gb?return_to=/hc/en-gb">Help center</a></li><li><a class="_3lo6l _36PPP _2AZKg" href="/about/">About us</a></li><li><a class="_3lo6l _36PPP _2AZKg" href="https://help.lyst.com/hc/change_language/en-gb?return_to=/hc/en-gb/articles/360020556180">Shipping policy</a></li><li><a class="_3lo6l _36PPP _2AZKg" href="https://help.lyst.com/hc/change_language/en-gb?return_to=/hc/en-gb/articles/360020590839">Returns policy</a></li><li class="footer-link-item"><a class="_3lo6l _36PPP _2AZKg" href="https://help.lyst.com/hc/change_language/en-gb?return_to=/hc/en-gb/articles/115004438525">Payments</a></li><li class="footer-link-item"><a class="_3lo6l _36PPP _2AZKg" href="https://help.lyst.com/hc/change_language/en-gb?return_to=/hc/en-gb/articles/115002753305">Refund policy</a></li><li><a class="_3lo6l _36PPP _2AZKg" href="https://making.lyst.com/">Developers</a></li><li><a class="_3lo6l _36PPP _2AZKg" href="/careers/">Careers</a></li><li><a class="_3lo6l _36PPP _2AZKg" href="/help/contact-us/">Contact</a></li><li><a class="_3lo6l _36PPP _2AZKg" href="/help/terms-and-conditions/">Terms &amp; conditions</a></li><li><a class="_3lo6l _36PPP _2AZKg" href="/help/privacy-policy/">Privacy &amp; cookie policy</a></li><li><a class="_3lo6l _36PPP _2AZKg" href="/help/intellectual-property/">Intellectual property</a></li><li><a class="_3lo6l _36PPP _2AZKg" href="/sitemap/categories/">Categories</a></li><li><a class="_3lo6l _36PPP _2AZKg" href="/partners/">Become a partner</a></li><li><a class="_3lo6l _36PPP _2AZKg" href="https://www.lyst.com/data/">Lyst Insights</a></li><li><a class="_3lo6l _36PPP _2AZKg" href="https://www.lyst.com/news/">Lyst News</a></li></ul>
+    </div>
+    </div>
+    
+    
+
+</body>
+</html>
+
+<script>
+
+let array=[
+{
+image_src:"https://cdna.lystit.com/200/250/tr/photos/gucci/d35e1062/gucci-Beige-Dionysus-GG-Supreme-Super-Mini-Bag.jpeg",
+brand:"GUCCI",
+description:"Dionysus CG Supreme Super Mini Bag-Natural", 
+Price:"$735",
+store:"Mytheresa",
+discount:"5%",
+color:"orange" 
+},
+{
+    image_src:"https://cdna.lystit.com/200/250/tr/photos/mytheresa/970ca5be/gucci-black-Schultertasche-GG-Marmont-Super-Mini.jpeg",
+    brand:"GUCCI",
+    description:"Dionysus CG mermont Super Mini Bag-Natural", 
+    Price:"$600",
+    store:"Rue-La-La",
+    color:"blue",
+    discount:"25%" 
+},
+{
+    image_src:"https://cdna.lystit.com/200/250/tr/photos/ruelala/f65f2ccb/gucci-Black-GG-Supreme-Canvas-Sneaker.jpeg",
+    brand:"GUCCI",
+    description:"Dionysus CG mermont Super Mini Bag-Natural", 
+    Price:"$600",
+    store:"Rue-La-La",
+    color:"blue" ,
+    discount:"11%"
+
+},
+{
+    image_src:"https://cdna.lystit.com/200/250/tr/photos/gucci/fc0f674e/gucci-white-GG-Marmont-Super-Mini-Tasche-aus-Matelasse.jpeg",
+    brand:"GUCCI",
+    description:"Dionysus CG mermont Super Mini Bag-Natural", 
+    Price:"$650",
+    store:"Rue-La-La",
+    color:"blue" ,
+    discount:"10%"  
+},
+{
+    image_src:"https://cdna.lystit.com/200/250/tr/photos/ruelala/74771585/gucci-Black-Double-G-Thin-Leather-Belt.jpeg",
+    brand:"GUCCI",
+    description:"CG supremecanvas sneaker", 
+    Price:"$1000",
+    store:"Rue-La-La",
+    color:"red",
+    discount:"21%"
+},
+{
+    image_src:"https://cdna.lystit.com/200/250/tr/photos/net-a-porter/f0db9658/gucci-Neutrals-Tennis-1977-Logo-embroidered-Canvas-Sneakers.jpeg",
+    brand:"GUCCI",
+    description:"Dionysus CG mermont Super Mini Bag-Natural", 
+    Price:"$600",
+    store:"Rue-La-La",
+    color:"blue" ,
+    discount:"7%" 
+},
+{
+    image_src:"https://cdna.lystit.com/200/250/tr/photos/gilt/4b6ba3c0/gucci-Brown-GG0950SA-61mm-Sunglasses.jpeg",
+    brand:"GUCCI",
+    description:"Dionysus CG mermont Super Natural Sunglasses", 
+    Price:"$680",
+    store:"Mytheresa",
+    color:"yellow",
+    discount:"5%"  
+},
+{
+    image_src:"https://cdna.lystit.com/200/250/tr/photos/mytheresa/262fbff5/gucci-multicoloured-Dionysus-GG-Super-Mini-Crossbody-Bag.jpeg",
+    brand:"GUCCI",
+    description:"Dionysus CG mermont Super Natural minibag multicolor", 
+    Price:"$730",
+    discount:"12%" ,
+    color:"blue",
+    store:"Mytheresa" 
+},
+{
+    image_src:"https://cdna.lystit.com/200/250/tr/photos/mytheresa/8f960453/gucci-white-Ace-Leather-Sneakers.jpeg",
+    brand:"GUCCI",
+    description:"Dionysus CG mermont Super Natural  multicolor Sneakers", 
+    discount:"12%" ,
+    color:"blue",
+    Price:"$720",
+    store:"cettire" 
+},
+{  image_src:"https://cdna.lystit.com/200/250/tr/photos/cettire/c2a7fa8c/gucci-Multi-Knit-Long-sleeved-Zip-up-Jacket.jpeg",
+brand:"GUCCI",
+description:"Dionysus CG mermont Super Natural  multicolor Sneakers", 
+Price:"$700",
+discount:"17%" ,
+color:"blue",
+store:"Rue-La-La" 
+},
+{  image_src:"https://cdna.lystit.com/200/250/tr/photos/mytheresa/e9e1614f/gucci-multicoloured-Floral-Lace-Bustier-Gown.jpeg",
+brand:"GUCCI",
+description:"Floral Lace Gown-Green", 
+color:"yellow",
+Price:"$720",
+discount:"13%",
+store:"Mytheresa" 
+},
+{  image_src:"https://cdna.lystit.com/200/250/tr/photos/ruelala/e97f4587/gucci-Gold-GG0538S-56mm-Sunglasses.jpeg",
+brand:"GUCCI",
+description:"Go Super Sunglasses" , 
+Price:"$720",
+color:"brown",
+discount:"40%",
+store:"cettire" 
+},
+{
+    image_src:"https://cdna.lystit.com/200/250/tr/photos/gucci/d35e1062/gucci-Beige-Dionysus-GG-Supreme-Super-Mini-Bag.jpeg",
+    brand:"GUCCI",
+    description:"Dionysus CG Supreme Super Mini Bag-Natural", 
+    Price:"$735",
+    color:"brown",
+    store:"Mytheresa",
+    discount:"5%"
+    },
+    {
+        image_src:"https://cdna.lystit.com/200/250/tr/photos/ruelala/667e50b2/gucci-Silver-Heart-Silver-Ring.jpeg",
+        brand:"GUCCI",
+        description:"Dionysus CG mermont Super Mini Bag-Natural", 
+        Price:"$600",
+        color:"brown",
+        store:"Rue-La-La",
+        discount:"navyblue"
+    },
+    {
+        image_src:"https://cdna.lystit.com/200/250/tr/photos/ruelala/5f12d99e/gucci-1096-BLACK-Ace-Interlocking-G-Leather-Sneaker.jpeg",
+        brand:"GUCCI",
+        description:"Dionysus CG mermont Super Mini Bag-Natural", 
+        Price:"$600",
+        store:"Rue-La-La",
+        discount:"17%" ,
+color:"blue"
+    },
+    {
+        image_src:"https://cdna.lystit.com/200/250/tr/photos/baltini/c510661f/gucci-BLACK-Sunglasses.jpeg",
+        brand:"GUCCI",
+        description:"Dionysus CG mermont Super Mini Bag-Natural", 
+        Price:"$650",
+        store:"Rue-La-La",
+        discount:"12%",
+        color:"whitesmoke"   
+    },
+
+    {
+        image_src:"https://cdna.lystit.com/200/250/tr/photos/net-a-porter/f0db9658/gucci-Neutrals-Tennis-1977-Logo-embroidered-Canvas-Sneakers.jpeg",
+        brand:"GUCCI",
+        description:"Dionysus CG mermont Super Mini Bag-Natural", 
+        Price:"$600",
+        discount:"17%" ,
+color:"blue",
+        store:"Rue-La-La"  
+    },
+    {
+        image_src:"https://cdna.lystit.com/200/250/tr/photos/gilt/4b6ba3c0/gucci-Brown-GG0950SA-61mm-Sunglasses.jpeg",
+        brand:"GUCCI",
+        description:"Dionysus CG mermont Super Natural Sunglasses", 
+        Price:"$680",
+        discount:"18%" ,
+color:"blue",
+        store:"Mytheresa" 
+    },
+    {
+        image_src:"https://cdna.lystit.com/200/250/tr/photos/mytheresa/262fbff5/gucci-multicoloured-Dionysus-GG-Super-Mini-Crossbody-Bag.jpeg",
+        brand:"GUCCI",
+        description:"Dionysus CG mermont Super Natural minibag multicolor", 
+        Price:"$730",
+        discount:"27%" ,
+color:"blue",
+        store:"Mytheresa"
+    },
+    {
+        image_src:"https://cdna.lystit.com/200/250/tr/photos/mytheresa/8f960453/gucci-white-Ace-Leather-Sneakers.jpeg",
+        brand:"GUCCI",
+        description:"Dionysus CG mermont Super Natural  multicolor Sneakers", 
+        Price:"$720",
+        store:"cettire",
+        discount:"17%" ,
+color:"blue", 
+    },
+    {  image_src:"https://cdna.lystit.com/200/250/tr/photos/cettire/c2a7fa8c/gucci-Multi-Knit-Long-sleeved-Zip-up-Jacket.jpeg",
+    brand:"GUCCI",
+    description:"Dionysus CG mermont Super Natural  multicolor Sneakers", 
+    Price:"$700",
+    store:"Rue-La-La",
+    discount:"10%",
+    color:"white" 
+    },
+    {  image_src:"https://cdna.lystit.com/200/250/tr/photos/mytheresa/e9e1614f/gucci-multicoloured-Floral-Lace-Bustier-Gown.jpeg",
+    brand:"GUCCI",
+    description:"Floral Lace Gown-Green", 
+    Price:"$720",
+    store:"Mytheresa",
+    discount:"10%",
+    color:"white" 
+    },
+    {  image_src:"https://cdna.lystit.com/200/250/tr/photos/ruelala/e97f4587/gucci-Gold-GG0538S-56mm-Sunglasses.jpeg",
+    brand:"GUCCI",
+    description:"Go Super Sunglasses" , 
+    Price:"$720",
+    store:"cettire",
+    discount:"10%",
+    color:"blue"
+    },
+    {
+        image_src:"https://cdna.lystit.com/200/250/tr/photos/gucci/d35e1062/gucci-Beige-Dionysus-GG-Supreme-Super-Mini-Bag.jpeg",
+        brand:"GUCCI",
+        description:"Dionysus CG Supreme Super Mini Bag-Natural", 
+        Price:"$735",
+        store:"Mytheresa",
+        discount:"10%",
+        color:"blue"
+        },
+        {
+            image_src:"https://cdna.lystit.com/200/250/tr/photos/mytheresa/970ca5be/gucci-black-Schultertasche-GG-Marmont-Super-Mini.jpeg",
+            brand:"GUCCI",
+            description:"Dionysus CG mermont Super Mini Bag-Natural", 
+            Price:"$600",
+            store:"Rue-La-La",
+            color:"blue",
+            discount:"2%"
+        },
+  
+   
+        {
+            image_src:"https://cdna.lystit.com/200/250/tr/photos/net-a-porter/f0db9658/gucci-Neutrals-Tennis-1977-Logo-embroidered-Canvas-Sneakers.jpeg",
+            brand:"GUCCI",
+            description:"Dionysus CG mermont Super Mini Bag-Natural", 
+            Price:"$600",
+            discount:"17%" ,
+color:"yellow-green",
+            store:"Rue-La-La",
+            
+        },
+        {
+            image_src:"https://cdna.lystit.com/200/250/tr/photos/gilt/4b6ba3c0/gucci-Brown-GG0950SA-61mm-Sunglasses.jpeg",
+            brand:"GUCCI",
+            description:"Dionysus CG mermont Super Natural Sunglasses", 
+            Price:"$680",
+            discount:"17%" ,
+color:"crimpson red",
+            store:"Mytheresa"  
+        },
+        {
+            image_src:"https://cdna.lystit.com/200/250/tr/photos/mytheresa/262fbff5/gucci-multicoloured-Dionysus-GG-Super-Mini-Crossbody-Bag.jpeg",
+            brand:"GUCCI",
+            description:"Dionysus CG mermont Super Natural minibag multicolor", 
+            Price:"$730",
+            store:"Mytheresa",
+            discount:"17%" ,
+color:"green"
+
+        },
+        {
+            image_src:"https://cdna.lystit.com/200/250/tr/photos/mytheresa/8f960453/gucci-white-Ace-Leather-Sneakers.jpeg",
+            brand:"GUCCI",
+            description:"Dionysus CG mermont Super Natural  multicolor Sneakers", 
+            Price:"$720",
+            store:"cettire",
+            discount:"17%" ,
+color:"green-yellow", 
+            discount:"12%"
+
+        },
+            {
+                image_src:"https://cdna.lystit.com/200/250/tr/photos/mytheresa/970ca5be/gucci-black-Schultertasche-GG-Marmont-Super-Mini.jpeg",
+                brand:"GUCCI",
+                description:"Dionysus CG mermont Super Mini Bag-Natural", 
+                Price:"$600",
+                store:"Rue-La-La",
+                discount:"10%",
+                color:"yellow"
+
+            },
+            {
+                image_src:"https://cdna.lystit.com/200/250/tr/photos/mytheresa/63bc20b2/gucci-black-Baseballcap-GG-aus-Canvas.jpeg",
+                brand:"GUCCI",
+                description:"Dionysus CG mermont Super Mini Topi-Natural", 
+                Price:"$650",
+                store:"Topi"  ,
+                discount:"10%",
+                color:"red"
+
+            },
+            {
+                image_src:"https://cdna.lystit.com/200/250/tr/photos/ruelala/74771585/gucci-Black-Double-G-Thin-Leather-Belt.jpeg",
+                brand:"GUCCI",
+                description:"CG supremecanvas sneaker", 
+                Price:"$1000",
+                store:"Rue-La-La",
+                discount:"10%",
+                color:"red"
+
+            },
+            {
+                image_src:"https://cdna.lystit.com/200/250/tr/photos/ruelala/e5369930/gucci-Gold-GG0443S-60mm-Sunglasses.jpeg",
+                brand:"GUCCI",
+                description:"Dionysus CG mermont Super Mini Bag-Natural", 
+                Price:"$1300",
+                store:"Gilt",
+                discount:"20%",
+                color:"red"
+            },
+            {
+                image_src:"https://cdna.lystit.com/200/250/tr/photos/mytheresa/be055959/gucci-brown-Polo-Maxi-GG-en-soie-et-coton.jpeg",
+                brand:"GUCCI",
+                description:"Dionysus CG mermont Super Natural Sunglasses", 
+                Price:"$1200",
+                store:"Mytheresa",
+                discount:"10%",
+                color:"black"  
+            },
+            {
+                image_src:"https://cdna.lystit.com/200/250/tr/photos/mytheresa/262fbff5/gucci-multicoloured-Dionysus-GG-Super-Mini-Crossbody-Bag.jpeg",
+                brand:"GUCCI",
+                description:"Dionysus CG mermont Super Natural minibag multicolor", 
+                Price:"$730",
+                store:"Mytheresa",
+                discount:"20%",
+                color:"black" 
+            },
+            {
+                image_src:"https://cdna.lystit.com/200/250/tr/photos/mytheresa/8f960453/gucci-white-Ace-Leather-Sneakers.jpeg",
+                brand:"GUCCI",
+                description:"Dionysus CG mermont Super Natural  multicolor Sneakers", 
+                Price:"$720",
+                store:"cettire",
+                discount:"10%",
+                color:"yellow" 
+            },
+            {  image_src:"https://cdna.lystit.com/200/250/tr/photos/gilt/51afec00/gucci-Gold-Icon-18k-Ring.jpeg",
+            brand:"GUCCI",
+            description:"Dionysus CG mermont Super Natural  multicolor Sneakers", 
+            Price:"$900",
+            store:"Gilt",
+            discount:"19%",
+            color:"red"
+            },
+            {  image_src:"https://cdna.lystit.com/200/250/tr/photos/harrods/ca8f1d20/gucci-neutrals-GG-Rhyton-Sneakers.jpeg",
+            brand:"GUCCI",
+            description:"Floral Lace Gown-Green", 
+            Price:"$720",
+            store:"Harrods",
+            discount:"12%",
+            color:"black" 
+            },
+            {  image_src:"https://cdna.lystit.com/200/250/tr/photos/ssense/d8abc90b/gucci-BEIEBBRBSTR-gg-Supreme-New-Ace-Sneakers.jpeg",
+            brand:"GUCCI",
+            description:"Go Super Sneakers" , 
+            Price:"$720",
+            store:"SSense",
+            discount:"10%",
+            color:"black"
+            },
+
+    {
+        image_src:"https://cdna.lystit.com/200/250/tr/photos/ruelala/74771585/gucci-Black-Double-G-Thin-Leather-Belt.jpeg",
+        brand:"GUCCI",
+        description:"CG supremecanvas sneaker", 
+        Price:"$1000",
+        store:"Rue-La-La",
+        discount:"15%",
+        color:"black"
+    }
+
+  
+]
+displayproducts(array)
+function displayproducts(arr){
+    arr.forEach(function(el){
+    let card=document.createElement("card")
+    card.setAttribute("class","productinfo")
+let image=document.createElement("img")
+image.src=el.image_src
+image.style.marginLeft="20px"
+image.style.marginTop="20px"
+let brand=document.createElement("h3")
+brand.innerText=el.brand
+let description=document.createElement("p")
+description.innerText=el.description
+description.style.fontSize="14px"
+description.style.lineHeight="18px"
+let Price=document.createElement("p")
+Price.innerText=el.Price
+Price.style.fontSize="14px"
+Price.style.lineHeight="7px"
+let color=document.createElement("p")
+color.innerText=el.color
+color.style.fontSize="14px"
+color.style.lineHeight="7px"
+let discount=document.createElement("p")
+discount.innerText=el.discount
+discount.style.fontSize="14px"
+discount.style.lineHeight="7px"
+
+card.append(image,brand,description,Price,color,discount)
+document.querySelector("#allproducts").append(card)
+})
+
+
+
+}
+
+
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+
+
+</script>
