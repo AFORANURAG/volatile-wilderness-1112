@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP-Page</title>
+    <style>
+        .OTP{
+            width: 35px;
+            margin-top: 20px;
+            height: 40px;
+            font-size: 22px;
+        }#OTPcontainer{
+            width: 250px;
+            height: 170px;
+        border-radius: 5px;    
+            margin: auto;
+            margin-top: 50px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }form{
+                    text-align: center;
+            
+            height: 150px;
+        }h1{
+            text-align: center;
+            margin-top: 200px;
+            margin-right: 15px;
+        }#otpsubmit{
+            display: block;
+margin-top: 20px;
+width: 220px;
+height: 35px;
+margin: auto;
+margin-top: 40px;
+font-size: 20px;
+background-color: #007bff;
+color: white;
+border: none;
+        }
+
+        input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+    </style>
+</head>
+<body>
+    <h1>Verify OTP</h1>
+    <div id="OTPcontainer">
+        <form action=""> 
+            <input min="0" maxlength="1" type="number" class="OTP" required>
+            <input min="0" maxlength="1" type="number" class="OTP" required>
+            <input min="0" maxlength="1" type="number" class="OTP" required>
+            <input min="0" maxlength="1" type="number" class="OTP" required>
+            <hr style="width: 10px;width: 250px;margin-top:15px ;">
+            <button type="submit" id ="otpsubmit">Verify</button>
+        </form>
+
+    </div>
+   
+</body>
+</html>
+<script>
+document.querySelector("form").addEventListener("submit",function(event){
+    event.preventDefault()
+    alert( "Payment Successful! Your order has been successfully placed ")
+window.location.href="Homepage.html"
+})
+
+
+
+</script>

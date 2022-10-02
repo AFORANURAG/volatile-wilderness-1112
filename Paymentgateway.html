@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <style>
+#container{
+    
+    
+    height: 500px;
+    padding-left: 540px;
+    }form{
+        margin-top: 80px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 40%;
+        border-radius: 20px;
+        padding-top: 20px;
+        
+        
+    } 
+input[type="text"], input[type="number"],input[type="password"],input[type="date"]{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}h3{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+margin-left: 40px;
+margin-top: 20px;
+}input[type="submit"]{
+    width: 310px;
+    height: 45px;
+    margin-left: 40px;
+    
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+} input[type="submit"]:hover{
+    cursor: pointer;
+}h1{
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+ <div id="container">
+     <form>
+        <h1>Payment Gateway</h1>
+<h3>Bank name</h3>
+        <input id="bankname" type="text" maxlength="20" placeholder="Enter Your Bank name"  value="" required  />
+        <h3>Card expiry Date</h3>
+        <input type="date" placeholder="Enter Your Card Expiry Date" id="cardexpiry" value="" required >
+<h3>Enter Your 4 digit PIN</h3>
+<input type="password" name="" maxlength="4" id="Password" placeholder="Enter Your PIN" value="" required >
+<br> 
+<input type="submit" placeholder="PAYNOW"/>
+      </form>
+
+ </div>   
+
+
+</body>
+</html>
+
+ <script>
+//it is now the time to add functionalities into our html document to make it alive. 
+let submit=document.querySelector("form")
+submit.addEventListener("submit",myfun)
+function myfun(event){
+    event.preventDefault()
+
+
+alert("An OTP has been sent to your registered mobile number")
+window.location.href="OTP.html"
+}
+// it will overwrite because you are 
+ </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

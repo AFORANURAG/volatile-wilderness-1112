@@ -273,7 +273,8 @@ form p{
 <a href="C:\Users\A utility\Desktop\cw_project1\siguppage.html" class="a2">Sign in</a>
 <a href="C:\Users\A utility\Desktop\cw_project1\joinpage.html" class="a1">Join</a></div>
 <div id="div2">
-<img id="image" src="https://maddyness-uk.twic.pics/2021/05/Screenshot-2021-05-12-at-13.55.18.png?twic=v1/resize=630" alt="">
+  <a href="Homepage.html"><img id="image" src="https://maddyness-uk.twic.pics/2021/05/Screenshot-2021-05-12-at-13.55.18.png?twic=v1/resize=630" alt="">  </a>
+
 <span><a href="">WOMEN</a></span>
 <span><a href="">MEN</a></span>
 <form class="example" action="/action_page.php">
@@ -286,8 +287,9 @@ form p{
 
 <div id="container">
 <div id="joindiv1" >
-    <button id="join">New to lyst?</button>
-    <button id="signin">Already a member</button>
+  <a href="joinpage.html"><button id="join">New to lyst?</button></a>
+ <a href="siguppage.html"><button id="signin">Already a member</button></a>
+ 
 <h2>
     Search thousands of fashion brands and stores all in one place
 </h2>
@@ -295,13 +297,13 @@ form p{
 <p style="color: 
 #a6a6a6;">We just need a few details from you first.</p>
 
-<form action="" id="loginform">
+<form action="" id="joinlystform" >
 <p class="p1">Email address
 </p>
-<input type="email" id="email" placeholder="Enter your email address ">
+<input type="email" id="email" placeholder="Enter your email address " value="" required>
 <p class="p2" >Password</p>
-<input type="password" name="" id="password" placeholder="min 8 characters"><br>
-<input type="checkbox" id="checkbox" name="" value="">
+<input type="password"  name="" minlength="8" id="password" placeholder="min 8 characters" value="" required><br>
+<input type="checkbox" id="checkbox" name="" value="" required>
   <label for="" id="label1" >
     I would like to hear about products, services, and sales, including personalized email alerts from Lyst. You can unsubscribe at any time.</label><br>
 <button type="submit" class="class2"> Join Lyst</button>
@@ -325,30 +327,30 @@ form p{
     <i class="fa fa-bell" style="margin-right:25px ;"></i><h3 style= "margin-right:30px;font-size:18px ;display:inline ;line-height: 30px; ">Save your searches</h3><br>
 
 
-
-
-
-
-
-
 </div>
 
 
 </div>
 </div>
-
-
 
 </html>
 
 
-
-
-
-
-
-
 <script>
+
+
+  document.querySelector("#joinlystform").addEventListener("submit",myFun)
+ function myFun(event){
+  event.preventDefault()
+  let email=document.querySelector("#email").value
+let password=document.querySelector("#password").value
+localStorage.setItem("email",email)
+localStorage.setItem("password",password)
+alert("Congralulations! Account Successfully created")
+window.location.href="siguppage.html"
+}
+  
+
 
 
 function myFunction() {
