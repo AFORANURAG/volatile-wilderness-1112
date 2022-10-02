@@ -30,6 +30,7 @@
     transform-origin: bottom left;
     width: 310px;
 font-size: 25px;
+margin-bottom: -5px;
 
 }.div3{
     height: 320px;
@@ -120,7 +121,7 @@ color: rgb(126, 126, 255);
     grid-template-columns: 215px 170px 215px 170px 215px 170px 215px 170px 215px 170px  ;
     grid-template-rows:600px;
 }.jacket{
-    padding-top: 170px;
+    padding-top: 190px;
 }
 .jacket a{
     display: block;
@@ -131,24 +132,24 @@ color: rgb(126, 126, 255);
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     transform: rotate(-90deg);
-    margin-top: 135px;
+    margin-top: 285px;
     margin-right: -160px;
 }.maihoondon1{
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     transform: rotate(-90deg);
-    margin-top: 190px;
+    margin-top: 360px;
     position: relative;
     margin-right: -160px;
 }.jacket1{
-    padding-top: 170px;
+    padding-top: 230px;
 }.jacket1>a{
     margin-left: 5px;
     display: block;
 
     margin-top: 40px;
 }.jacket2{
-padding-top: 170px;
+padding-top: 470px;
 }.jacket2>a{
 display: block;
 margin-left: 5px;
@@ -156,7 +157,7 @@ margin-left: 5px;
 margin-top:40px ;
 }
  .jacket3{
-padding-top: 175px;
+padding-top: 400px;
 }.jacket3>a{
     display: block;
     margin-top: 40px;
@@ -170,9 +171,9 @@ margin-top: 40px;
 margin-left: 5px;
 }#footer{
     display: flex;
-    width:102%;
+    width:130%;
     height: 600px;
-    margin-left: -20px;
+    margin-left: -10px;
     border-top: 1px solid black;
     background-color:#f5f4f2;
     margin-top: 130px;
@@ -193,11 +194,13 @@ margin-left: 5px;
 }ul>li>a{
     color: black;
 }
-
-
 #navbar{
+  z-index: 1;
 width: 100%;
 height: 100px;
+position: sticky;
+transition: 0.3s;
+background-color:white;
 }#div1{
 
     height: 35%;
@@ -437,7 +440,6 @@ border: 1px solid black;
 margin-top: 5px;
 
 }
-
 .modal1 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -451,7 +453,6 @@ margin-top: 5px;
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-
 /* Modal Content */
 .modal-content1 {
   background-color: #fefefe;
@@ -460,7 +461,6 @@ margin-top: 5px;
   border: 1px solid #888;
   width: 80%;
 }
-
 /* The Close Button */
 .close1 {
   color: #aaaaaa;
@@ -468,7 +468,6 @@ margin-top: 5px;
   font-size: 28px;
   font-weight: bold;
 }
-
 .close1:hover,
 .close1:focus {
   color: #000;
@@ -604,9 +603,7 @@ form.example::after {
   -ms-user-select: none;
   user-select: none;
   font-size: 13px;
-
 }
-
 /* The actual popup */
 .popup .popuptext {
   visibility: hidden;
@@ -654,7 +651,6 @@ form.example::after {
   to {opacity:1 ;}
 }.popup{
     margin-right: 15px;
-
 }#categorywomen{
     width: 102%;
     margin-left: -10px;
@@ -670,9 +666,10 @@ form.example::after {
     width: 100%;
     padding-top: 25px;
 display: flex;
+height:600px ;
 }#id2{
     width: 20%;
-    height: 500px;
+    height: 450px;
     border-right:1px solid black ;
     display: flex;
     flex-direction: column;
@@ -685,49 +682,35 @@ width: 80%;
 border: none;
 height: 400px;
 }
-
-
-
-
 /* The Modal (background) */
-.modal2 {
+.modal5 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 10px; /* Location of the box */
+  padding-bottom: 100px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
 }
 
 /* Modal Content */
-.modal-content2 {
+.modal-content5 {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
-  height: 850px;
+  width: 100%;
+  height: 680px;
 }
 
 /* The Close Button */
-.close2 {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
 
-.close2:hover,
-.close2:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
+
+
 #myBtn1{
   background-color: white;
   border: none;
@@ -741,37 +724,39 @@ height: 400px;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+ /* Location of the box */
   left: 0;
   top: 0;
+  padding-top: -500px;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
+ overflow: hidden;
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
 .modal-content3 {
   background-color: #fefefe;
-  margin: auto;
+
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
-  height: 700px;
-  margin-top: -90px;
+  width: 100%;
+  height: 680px;
+
 }
 
 /* The Close Button */
-.close3 {
+#closeit {
   color: #aaaaaa;
-  float: right;
+
   font-size: 28px;
   font-weight: bold;
 }
 
-.close3:hover,
-.close3:focus {
+#closeit:hover,
+#closeit:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -897,7 +882,7 @@ form.example::after {
 display: flex;
 }#id5{
     width: 20%;
-    height: 480px;
+    height: 450px;
     border-right:1px solid black ;
     display: flex;
     flex-direction: column;
@@ -915,21 +900,20 @@ background-color: white;
 border: none;
 font-size: 20px;
 margin-left: 5px;
+}#closeme{
+  color: #aaaaaa;
+
+  font-size: 28px;
+  font-weight: bold;
+} 
+#closeme:hover{
+  cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
 
 
 </style>
 
-    </style>
+
 </head>
 <body>
 <div id="navbar">
@@ -946,10 +930,10 @@ margin-left: 5px;
     <div>-------------------</div>
     </span>
   </div>
-<a href="C:\Users\A utility\Desktop\cw_project1\joinpage.html" class="a2">Sign in</a>
-<a href="C:\Users\A utility\Desktop\cw_project1\siguppage.html" class="a1">Join</a></div>
+<a href="siguppage.html" class="a2">Sign in</a>
+<a href="joinpage.html" class="a1">Join</a></div>
 <div id="div2">
-  <a href=""><img id="image" src="https://maddyness-uk.twic.pics/2021/05/Screenshot-2021-05-12-at-13.55.18.png?twic=v1/resize=630" alt="">
+  <a href="Homepage.html"><img id="image" src="https://maddyness-uk.twic.pics/2021/05/Screenshot-2021-05-12-at-13.55.18.png?twic=v1/resize=630" alt="">
   </a>
   <button id="myBtn1">WOMEN</button>
   <button id="myBtn2">MEN</button>
@@ -1037,11 +1021,11 @@ margin-left: 5px;
 
 
 <!-- The Modal -->
-<div id="myModal2" class="modal2">
+<div id="myModal4" class="modal5">
 
   <!-- Modal content -->
-  <div class="modal-content2">
-    <span class="close2">&times;</span>
+  <div class="modal-content5">
+    <span id="closeit">&times;</span>
     <div id="navbar">
 <div id="div1">
 <button id="but1">IN-US$</button>
@@ -1115,8 +1099,6 @@ margin-left: 5px;
 </div>
 
 <!-- Trigger/Open The Modal -->
-
-
 <!-- The Modal -->
 <div id="myModal3" class="modal3">
 
@@ -1322,7 +1304,7 @@ margin-left: 5px;
 </div>
 <div class="infodiv3">
 <div class="h">
-<h1 class="maihoondon">CLOTHING</h1>
+<h1 class="maihoondon" style="margin-bottom: -110px;">CLOTHING</h1>
 <h1 class="maihoondon">WOMEN'S </h1>
 </div>    
 <div class="jacket">
@@ -1338,7 +1320,7 @@ margin-left: 5px;
 <a href="">More</a>
 </div>
 <div class="h">
-<h1 class="maihoondon1" style="margin-bottom:-105px ;">CLOTHING</h1>
+<h1 class="maihoondon1" style="margin-bottom:-260px ;">CLOTHING</h1>
 <h1 class="maihoondon1">MEN'S </h1>
 </div>    
 <div class="jacket1">
@@ -1353,7 +1335,7 @@ margin-left: 5px;
 
 </div>
 <div class="h">
-<h1 class="maihoondon">SHOES</h1>
+<h1 class="maihoondon" style="margin-bottom: -110px;">SHOES</h1>
 <h1 class="maihoondon">WOMEN'S </h1>
 </div>    
 <div class="jacket2">
@@ -1363,7 +1345,7 @@ margin-left: 5px;
 <a href="">Flat and flat Shoes</a>
 </div>
 <div class="h">
-<h1 class="maihoondon1" style="margin-bottom:-105px ;">SHOES</h1>
+<h1 class="maihoondon1" style="margin-bottom:-260px ;">SHOES</h1>
 <h1 class="maihoondon1">MEN'S </h1>
 </div>    
 <div class="jacket3">
@@ -1374,7 +1356,7 @@ margin-left: 5px;
 <a href="">Sandals,slides and flip flops</a>
 </div>
 <div class="h">
-<h1 class="maihoondon">Accessories</h1>
+<h1 class="maihoondon" style="margin-bottom: -110px;">Accessories</h1>
 <h1 class="maihoondon">WOMEN'S </h1>
 </div>    
 <div class="jacket4">
@@ -1390,7 +1372,6 @@ margin-left: 5px;
 </div>
 </div>
                        <!--footer Section -->
-
 <div id="footer">
 <div id="footer-child1">
 <img style="width:200px; margin-top: 80px; margin-left: 300px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Trustpilot_Logo_%282022%29.svg/330px-Trustpilot_Logo_%282022%29.svg.png" alt="">
@@ -1415,14 +1396,6 @@ margin-left: 5px;
 <ul style="color: black; line-height: 25px;" type="none"><li><a class="_3lo6l _36PPP _2AZKg" href="https://help.lyst.com/hc/change_language/en-gb?return_to=/hc/en-gb">Help center</a></li><li><a class="_3lo6l _36PPP _2AZKg" href="/about/">About us</a></li><li><a class="_3lo6l _36PPP _2AZKg" href="https://help.lyst.com/hc/change_language/en-gb?return_to=/hc/en-gb/articles/360020556180">Shipping policy</a></li><li><a class="_3lo6l _36PPP _2AZKg" href="https://help.lyst.com/hc/change_language/en-gb?return_to=/hc/en-gb/articles/360020590839">Returns policy</a></li><li class="footer-link-item"><a class="_3lo6l _36PPP _2AZKg" href="https://help.lyst.com/hc/change_language/en-gb?return_to=/hc/en-gb/articles/115004438525">Payments</a></li><li class="footer-link-item"><a class="_3lo6l _36PPP _2AZKg" href="https://help.lyst.com/hc/change_language/en-gb?return_to=/hc/en-gb/articles/115002753305">Refund policy</a></li><li><a class="_3lo6l _36PPP _2AZKg" href="https://making.lyst.com/">Developers</a></li><li><a class="_3lo6l _36PPP _2AZKg" href="/careers/">Careers</a></li><li><a class="_3lo6l _36PPP _2AZKg" href="/help/contact-us/">Contact</a></li><li><a class="_3lo6l _36PPP _2AZKg" href="/help/terms-and-conditions/">Terms &amp; conditions</a></li><li><a class="_3lo6l _36PPP _2AZKg" href="/help/privacy-policy/">Privacy &amp; cookie policy</a></li><li><a class="_3lo6l _36PPP _2AZKg" href="/help/intellectual-property/">Intellectual property</a></li><li><a class="_3lo6l _36PPP _2AZKg" href="/sitemap/categories/">Categories</a></li><li><a class="_3lo6l _36PPP _2AZKg" href="/partners/">Become a partner</a></li><li><a class="_3lo6l _36PPP _2AZKg" href="https://www.lyst.com/data/">Lyst Insights</a></li><li><a class="_3lo6l _36PPP _2AZKg" href="https://www.lyst.com/news/">Lyst News</a></li></ul>
 </div>
 </div>
-
-
-
-
-
-
-
-
 
 </body>
 </html>
@@ -1467,29 +1440,24 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
 function myFunction() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
 }
-var modal1 = document.getElementById("myModal1");
 
+var modal1 = document.getElementById("myModal1");
 // Get the button that opens the modal
 var btn1 = document.getElementById("myBtn");
-
 // Get the <span> element that closes the modal
 var span1 = document.getElementsByClassName("close1")[0];
-
 // When the user clicks the button, open the modal 
 btn1.onclick = function() {
   modal1.style.display = "block";
 }
-
 // When the user clicks on <span> (x), close the modal
 span1.onclick = function() {
   modal1.style.display = "none";
 }
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal1) {
@@ -1497,28 +1465,31 @@ window.onclick = function(event) {
   }
 }
 // Get the modal
-var modal2 = document.getElementById("myModal2");
+let  modal0 = document.getElementById("myModal4");
 
 // Get the button that opens the modal
-var btn2 = document.getElementById("myBtn1");
-
+let  btn0 = document.getElementById("myBtn1");
 // Get the <span> element that closes the modal
-var span2 = document.getElementsByClassName("close2")[0];
-
-// When the user clicks the button, open the modal 
-btn2.onclick = function() {
-  modal2.style.display = "block";
+  let span0 = document.getElementById("closeit");
+span0.setAttribute("id","closeit")
+  // When the user clicks the button, open the modal 
+btn0.onclick = function() {
+  modal0.style.display = "block";
 }
 
+
 // When the user clicks on <span> (x), close the modal
-span2.onclick = function() {
-  modal2.style.display = "none";
+span0.onclick = function() {
+console.log(span0)
+
+  modal0.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal2) {
-    modal2.style.display = "none";
+  console.log(event)
+  if (event.target == modal0) {
+    modal0.style.display = "none";
   }
 }
 
@@ -1531,6 +1502,7 @@ var btn3 = document.getElementById("myBtn2");
 
 // Get the <span> element that closes the modal
 var span3 = document.getElementsByClassName("close3")[0];
+span3.setAttribute("id","closeme")
 
 // When the user clicks the button, open the modal 
 btn3.onclick = function() {
@@ -1544,9 +1516,27 @@ span3.onclick = function() {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
+  console.log(event)
   if (event.target == modal3) {
     modal3.style.display = "none";
   }
 }
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+
+
 
 </script>
